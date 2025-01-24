@@ -181,6 +181,7 @@ class DownloadTypeEnum(Flag):
     playlist = auto()
     artist = auto()
     album = auto()
+    label = auto()
 
 
 @dataclass
