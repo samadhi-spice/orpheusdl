@@ -190,7 +190,8 @@ def main():
                                 'track': DownloadTypeEnum.track,
                                 'album': DownloadTypeEnum.album,
                                 'playlist': DownloadTypeEnum.playlist,
-                                'artist': DownloadTypeEnum.artist
+                                'artist': DownloadTypeEnum.artist,
+                                'label': DownloadTypeEnum.label
                             }
 
                         type_matches = [media_type for url_check, media_type in url_constants.items() if url_check in components]
