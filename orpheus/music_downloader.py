@@ -250,7 +250,7 @@ class Downloader:
         return album_info.tracks
 
     def download_label(self, label_id, extra_kwargs={}):
-        label_info: LabelInfo = self.service.get_label_info(label_id, self.global_settings['label_downloading']['return_credited_albums'], **extra_kwargs)
+        label_info: LabelInfo = self.service.get_label_info(label_id, **extra_kwargs)
         label_name = label_info.label_name
 
         self.set_indent_number(1)
@@ -275,8 +275,7 @@ class Downloader:
             tracks_downloaded += self.download_album(album_id, artist_name=artist_name, path=artist_path, indent_level=2, extra_kwargs=label_info.album_extra_kwargs)
 
         self.set_indent_number(2)
-        skip_tracks = self.global_settings['label_downloading']['separate_tracks_skip_downloaded']
-        tracks_to_download = [i for i in label_info.tracks if (i not in tracks_downloaded and skip_tracks) or not skip_tracks]
+        tracks_to_download = [i for i in label_info.tracks if (i not in tracks_downloaded)]
         number_of_tracks_new = len(tracks_to_download)
         for index, track_id in enumerate(tracks_to_download, start=1):
             print()
