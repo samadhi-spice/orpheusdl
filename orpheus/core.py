@@ -42,10 +42,6 @@ class Orpheus:
                 "return_credited_albums": True,
                 "separate_tracks_skip_downloaded": True
             },
-            "label_downloading":{
-                "return_credited_albums": True,
-                "separate_tracks_skip_downloaded": True
-            },
             "formatting": {
                 "album_format": "{name}{explicit}",
                 "playlist_format": "{name}{explicit}",
