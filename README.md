@@ -7,9 +7,9 @@ OrpheusDL
 
 A modular music archival program
 
-[Report Bug](https://github.com/OrfiTeam/OrpheusDL/issues)
+[Report Bug](https://github.com/samadhi-spice/OrpheusDL/issues)
 ·
-[Request Feature](https://github.com/OrfiTeam/OrpheusDL/issues)
+[Request Feature](https://github.com/samadhi-spice/OrpheusDL/issues)
 
 
 ## Table of content
@@ -46,7 +46,7 @@ Follow these steps to get a local copy of Orpheus up and running:
 
 1. Clone the repo
     ```shell
-    git clone https://github.com/OrfiTeam/OrpheusDL.git && cd OrpheusDL
+    git clone https://github.com/samadhi-spice/OrpheusDL.git && cd OrpheusDL
     ```
 2. Install all requirements
    ```shell
